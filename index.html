@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+       <div> <img class="Logo" src="./img/Logo.png" id="Logo"></div>
+       <div class="Parte_Izquierda">
+           <textarea class="Entrada_de_Texto" name="Texto_Entrada" 
+           id="Texto_Entrada" placeholder="Ingrese el texto"></textarea>
+       
+         <div class="Terminos_y_Botones">
+           <p> ⚠ Solo letras minusculas y sin acentos.</p>
+         </div>
+
+         <div class="Botones">
+          <button class="Boton_encriptar" type="button" onclick="Encriptar()">Encriptar</button>
+           <input type="button" class="Boton_desencriptar" value="Desencriptar" onclick="Desencriptar()"/>
+       </div>
+    </div>
+
+     <div class="Mensaje_Encriptado">
+         <img src="./img/Muñeco.png" id="Muneco"> 
+         <textarea class="Encriptado" name="Encriptado" id="Encriptado" cols="30" rows="10"></textarea> 
+          <div class="Texto_Encriptado" id="Texto_Encriptado">
+            
+             <h2 id="No_se_encontro_mensaje">Ningún mensaje fue encontrado</h2>
+             <p id="Parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+             
+         </div>
+     
+
+     <div>
+           <input class="Boton_copiar" type="button" id="Boton_copiar" onclick="Copiar()"value="Copiar">
+     </div>
+     
+     </div>
+ </div>    
+ 
+
+<footer class="footer">© Desarrollado por Angie Karime Gómez</footer>
+
+</body>
+<script src="app.js"></script>
+</html>
